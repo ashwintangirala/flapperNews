@@ -1,5 +1,5 @@
-angular.module('myApp')
-.factory('teams', [
+
+app.factory('teams', [
 	'$http' 
 	, function($http ){
 
@@ -9,12 +9,12 @@ angular.module('myApp')
     , {name: 'bain'}
     , {name: 'bcg'}
     ]
-  }; 
+  };
 
   ts.getAll = function() {
     return $http.get('/teams.json').success(function(data){
-      ts.teams.push.apply(ts.teams, data); 
-      // angular.copy(data, ts.teams);
+      // ts.teams.push.apply(ts.teams, data); 
+      angular.copy(data, ts.teams);
     });
   };
 

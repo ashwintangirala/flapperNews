@@ -1,5 +1,4 @@
-angular.module('myApp')
-.controller('PostsCtrl', [
+app.controller('PostsCtrl', [
   '$scope'
   , '$stateParams'
   , 'posts'

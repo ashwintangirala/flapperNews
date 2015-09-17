@@ -1,5 +1,4 @@
-angular.module('myApp')
-.factory('employees', [
+app.factory('employees', [
 	'$http' 
 	, function($http ){
 

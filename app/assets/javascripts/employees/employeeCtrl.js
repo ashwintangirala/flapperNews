@@ -1,9 +1,7 @@
-angular.module('myApp')
-.controller('employeeCtrl', [
+app.controller('employeeCtrl', [
   '$scope'
   , '$stateParams'
   , 'employees'
   , function($scope, $stateParams, employees){
     $scope.employee = employees.employees[$stateParams.id]; 
-
   }])

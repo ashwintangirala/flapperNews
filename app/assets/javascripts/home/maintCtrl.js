@@ -1,5 +1,4 @@
-angular.module('myApp')
-.controller('MainCtrl', [
+app.controller('MainCtrl', [
 '$scope' 
 ,  'posts' 
 , 'teams'
@@ -8,6 +7,8 @@ angular.module('myApp')
   $scope.test = 'Hello!';
 
   $scope.posts = posts.posts; 
+  
+  $scope.teams = teams.teams; 
   // $scope.addPost = function(){  
 	 // if(!$scope.title || $scope.title === '') { return; }
 	 //  $scope.posts.push({

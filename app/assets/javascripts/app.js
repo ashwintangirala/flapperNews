@@ -1,5 +1,8 @@
-angular.module('myApp',  ['ui.router', 'templates'])
-.config([
+var app = angular.module('myApp',  ['ui.router', 'templates', 'xeditable']); 
+
+// angular.module('myApp',  ['ui.router', 'templates'])
+
+app.config([
   '$stateProvider'
   , '$urlRouterProvider'
   , function($stateProvider, $urlRouterProvider){
@@ -26,3 +29,4 @@ angular.module('myApp',  ['ui.router', 'templates'])
     $urlRouterProvider.otherwise('home') ;
   }])
  
+

@@ -1,5 +1,4 @@
-angular.module('myApp')
-.factory('posts', [
+app.factory('posts', [
 	'$http',
   '$q'
 	, function($http, $q){

@@ -1,5 +1,4 @@
-angular.module('myApp')
-.controller('teamCtrl', [
+app.controller('teamCtrl', [
   '$scope'
   , '$stateParams'
   , 'teams'
